@@ -1,0 +1,179 @@
+<!DOCTYPE html> <!--html is a not case senestive language: It's not sensitive to Upper case or lower case letters-->
+<html lang="en"> <!--html + Enter/ Tab, this is a opening tag-->
+    <head>
+        <meta charset="UTF-8"> <!--Meta Element: define the Character Set-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Initial Width and Zoom Factor-->
+        <meta name="keywords" content="NYC Rezoning">
+        <meta name="description" content="New York City Rezoning Evaluations">
+        <title> Evaluating New York City Rezoning </title> <!--Title is the one in the browser-->
+        <link rel="stylesheet" href="CSS/normalize.css"/>
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> <!--Boxicons CDN Link-->
+        <style>
+            html{
+    font-size:62.5%; /* 62.5% x 16px = 10px, font-size of the html element */
+}
+
+/* Background */
+body {
+    background-color : black;
+}
+
+/* Navigation */
+.navigation{
+    background-color:#000;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    display:flex; /* Default direction: row*/
+    justify-content: flex-end; /* Main Axis */
+    align-items:center; /* Cross Axis*/
+    height:64px;
+}
+
+li{
+    position: relative; /*Relative to its normal position*/
+    margin:1rem;
+    right:5%;
+ }
+
+li a[href]{
+    font-family:"Helvetica";
+    font-weight:bold;
+    color:whitesmoke;
+    font-size:3rem;
+    text-decoration: none;
+}
+
+li a:hover[href]{
+    font-family:"Helvetica";
+    font-weight:bold;
+    color:black;
+    font-size:3rem;
+    background-color: white;
+}
+
+/* Cover */
+.cover {
+    position:relative;
+    text-align:left;
+}
+
+.NYC_vedio{
+    width:100%;
+    opacity:0.6;
+}
+
+.text_header {
+    font-family:"Helvetica"; /* Source Sans Pro*/
+    font-weight:bold;
+    color:white;
+    font-size:8rem; /* 8 times font size of the html element*/
+    position:absolute;
+    top:30%;
+    left: 31%;
+    transform:translate(-10%,10%);
+    text-shadow:3px 3px 5px rgba(0,0,0,0.5);
+}
+
+
+.text_header_2 {
+    font-family:"Helvetica";
+    font-weight:bold;
+    color:white;
+    font-size:3rem;
+    position:absolute;
+    top: 37%;
+    left:51%;
+    transform:translate(-50%,50%);
+}
+
+/*Conent*/
+p::selection{
+    background-color:whitesmoke;
+    color:black;
+}
+
+
+.DataViz{
+    width:100%;
+    opacity:0.8;
+}
+.WebApp{
+    width:100%;
+} 
+
+
+.content{
+    font-family:"Helvetica";
+    color:whitesmoke;
+    font-size:24px;
+    margin-left:600px;
+    margin-right:600px;
+    margin-top:100px;
+    margin-bottom:100px;
+    line-height:1.2;
+    text-align: justify;  
+}
+
+/* Data and Method */
+.Variables_and_Methods{
+    font-family:"Helvetica";
+    color:whitesmoke;
+    font-size:50px;
+}
+
+/* Model Gallery */
+.container{
+    display:grid;
+    /* 2 rows x 4 columns */
+    grid-template: repeat(2,300px)/ repeat(4,25fr); /* Define the number and size of rows and columns, fr means fraction */
+    border: 3px solid red;
+    justify-items:center; /*Horizental*/
+    align-items:center; /*Vertical*/
+    gap:10px;  /*Gap between the rows and columns, also could use row-gap and column-gap respectively*/
+}
+
+.modeling{
+    width:5rem;
+    height:5rem;
+}
+        </style>
+    </head>
+   
+    <body>
+        <!--======= Header =======-->
+        <div class="navigation">
+                <li><a href = "#about">ABOUT</a></li>
+                <li><a href = "#webapp">WEB APP</a></li>
+                <li><a href = "#model">MODEL</a></li>
+                <li><a href = "https://docs.google.com/document/d/1qLgMFNRz4jr52C8TFI04UQOqfc9L4nG-/edit" target="_blank">FULL REPORT</a></li>
+        </div>
+
+        <header>
+           <div class="cover"><!--Div or division element: Container Element-->
+               <video class="NYC_vedio" controls autoplay loop src="Vedios/NYC.mp4">Your broswer does not support vedios.</video>
+               <div class='text_header'> Evaluations of New York City Rezoning</div>
+               <div class='text_header_2'>Determine what has caused results to deviate from intended goals in past rezonings to better anticipate and mitigate potential deviations in future rezoning  </div>
+           </div>
+        </header>
+
+        <!--======= Main =======-->
+        <main>
+            <article class="content"><!--Making markup more meaningful to search engines-->
+             <p id = "about">Promoting optimal urban land use is critical to help neighborhoods thrive and make cities sustainable.  While market forces encourage the most economic use of land, zoning serves as a check to assure that the community is best served.  An implemented rezoning does not always provide the intended results, however, as the Environmental Impact Statement (EIS), the document upon which the rezoning is predicated, sometimes fails to account for iterative developments during the build process.  The motivation for this study is to determine what has caused results to deviate from intended goals in past rezonings to better anticipate and mitigate potential deviations in future rezonings.</p>
+             <p>This project includes an in-depth case study of the 2004 Downtown Brooklyn rezoning, comparing the goals for the 2013 end of the project’s “build years” (expected time from approval to completion of the project) to the actual results by identifying, collecting and analyzing data from before and after the build.</p>
+            
+             <p id="webapp">Based on the outcome of the Downtown Brooklyn study, we developed an interactive tool which allows a city planner or other user to change the value of various factors which affect the outcome of a rezoning. The predictive tool allows city planners to 1) consider more extreme scenarios and their corresponding effects on the neighborhood; 2) build a mitigation plan for various levels of deviation based on the scenarios; and 3) monitor during the build and set breakpoints at which mitigation must be implemented.</p>
+            </article>         
+                 
+            <a href="https://jljuli.github.io/nyc-rezoning/1020.html" target="_blank"> <img class = "WebApp" src="images/WebApp.png" alt="WebApp"></a>
+
+
+        <!--======= Footer =======-->
+        <Footer>
+            <li>
+                <a href ="#">Jump to Top</a>
+            </li>
+        </Footer>
+    </body>
+
+    </html> <!--closing tag-->
