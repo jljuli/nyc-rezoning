@@ -1,0 +1,269 @@
+/* Color Palette */
+:root{
+    --color-primary: #2584ff;
+    --color-secondary: #00d9ff;
+    --color-accent:#ff3400;
+    --color-landingpage:whitesmoke;
+    --color-body:black;
+}
+
+/* Typography */
+html{
+    font-size:62.5%; /* 62.5% x 16px = 10px, font-size of the html element */
+}
+
+body {
+    background-color : white;
+    font-family: 'Helvetica',"Avenir",'Times New Roman','Office Code Pro','Open Sans';
+    font-size:2.4rem;
+    line-height:1.55;
+    color:var(--color-body);
+}
+
+h1,
+h2 {
+    color:var(--color-landingpage);
+}
+
+h3,
+h4,
+h5 {
+    color:var(--color-body);
+}
+
+hr {
+    border-top: .3rem solid black;
+    margin-top:0;
+    margin-bottom:0;
+  }
+
+
+h1{
+    font-size:8rem; /* 1x font size of the html element*/
+}
+
+h2{
+    font-size:3rem; /* 1x font size of the html element*/
+}
+
+h3{
+    font-size:4rem; /* Heading for Content */
+    margin-top:10rem;
+    margin-bottom:1rem;
+}
+
+h4{
+    font-size:2.4rem; /* Heading for team */
+}
+
+h5{
+    font-size:2rem; /* Heading for team */
+    display:inline;
+}
+
+.figures{
+  font-style: italic;
+}
+
+
+/* Cover */
+.block { 
+    background:black;
+    opacity:.9;
+    text-align:center;
+    height:100vh;
+    width:100vw;
+    position:relative;
+    overflow:hidden;
+}
+
+.NYC_vedio{
+    opacity:.6;
+}
+
+.headings{
+    position:absolute;
+    top:40%;
+    left:50%;
+    margin-right:-50%;
+    transform: translate(-50%, -50%);
+    text-shadow:3px 3px 5px black;
+}
+
+.headings h1{
+    margin-bottom:0;
+}
+
+.navigation{
+    color:var(--color-landingpage);
+    position:absolute;
+    top:70%;
+    left:50%;
+    margin-right:-50%;
+    transform: translate(-50%, -50%);
+    text-shadow:3px 3px 5px black
+}
+
+li{
+    display:inline;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+li a[href]{
+    display:inline;
+    font-weight:bold;
+    color:var(--color-headings);
+    font-size:3rem;
+    text-decoration: none;
+}
+
+li a:hover[href]{
+    text-decoration: underline;
+}
+
+/*Conent*/
+main{
+    font-family:"Helvetica";
+    color:var(--color-body);
+    margin-left:25%;
+    margin-right:25%;
+    margin-top:100px;
+    margin-bottom:100px;
+    text-align: justify;  
+}
+
+p::selection{
+    background-color:whitesmoke;
+    color:black;
+}
+
+
+.DataViz{
+    width:100%;
+    opacity:0.8;
+}
+
+/*Data*/
+#table_data{
+    border-collapse:collapse;
+    width:100%;
+    text-align:center;
+    margin-top:5rem;
+    margin-bottom:5rem;
+    font-family:Helvetica;
+    font-weight: normal;
+}
+
+#table_data td,th {
+    border:3px solid white;
+}
+
+
+th a[href]{
+    text-decoration: none;
+    color:white;
+}
+
+#thlink:hover {
+    background-color: #505050;
+    color:white;
+}
+
+tr:nth-child(1)
+{
+  background-color: #505050;
+  color:white;
+}
+
+.blue{
+     background-color:#95AFCA;
+     color:white;
+}
+
+.pink{
+    background-color:#D7A8AA;
+    color:white;
+}
+
+.green{
+    background-color: #9BC794;
+    color:white;
+}
+
+.brown{
+    background-color:  #D5D0CC;
+    color:white;
+}
+
+.purple{
+    background-color:#A592A0;
+    color:white;
+}
+
+
+/*Method*/
+.methods_1 {
+    width:7vw;
+    height:20vh;
+    float:left;
+    margin-top:20px;
+    display: flex; 
+    align-content: center;
+
+}
+
+.methods_2 {
+    width:7vw;
+    height:14vh;
+    float:left;
+    margin-top:20px;
+    display: flex; 
+    align-content: center;
+
+}
+
+#methods{
+    width:5vw;
+}
+
+.result_img{
+    width:100%;
+}
+
+/*Interactive Map*/
+#InteractiveMapImg {
+    margin-bottom: 0;
+    width:100%;
+}
+
+
+/*Team*/
+.container {
+    background:#E0E0E0;
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items:flex-start;
+    height:360px;
+}
+
+/*Footer*/
+footer{
+    background:#474747;
+    height:200px;
+    color:white;
+    text-align:center;
+    justify-content:center;
+    vertical-align:middle;
+}
+
+.footer{
+    color:var(--color-landingpage);
+    font-size:3rem;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+.footer:hover{
+    text-decoration: underline;
+}
