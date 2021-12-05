@@ -1,0 +1,261 @@
+html{
+    font-size:62.5%; /* 62.5% x 16px = 10px, font-size of the html element */
+}
+
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-family:sans-serif; 
+    font-size:1.6rem; 
+    line-height:1.5;
+}
+
+h2{
+    font-weight:bold;
+    font-size:2rem;
+}
+
+h4{
+    text-transform:uppercase;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    margin:0;
+    padding:16px;
+}
+::selection{
+    background-color:black;
+    color:whitesmoke;
+}
+
+/* Sidebar */
+.sidenav {
+    height: 100%;
+    width: 19.5%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: .5vh;
+    padding-left: .5vw;
+    line-height:2;
+}
+
+#intro{
+    padding-bottom:2rem;
+}
+
+.wrapper{
+    padding:4rem;
+}
+
+
+/* Sidebar Layout */
+input[name='tabs']{
+    display:none;
+}
+.label-title /* frame */ {
+    display: flex;
+    width: 95%;
+    height: 5rem;
+    cursor: pointer;
+    border: 3px solid black;/* #3E474F */
+    user-select: none;
+}
+
+.label-title div:first-child /* Text */{
+    width: 100%;
+    line-height: 45px;
+    margin-left: 10px;
+    font-size: 2rem;
+    font-weight:bold;
+}
+
+.cross{
+    margin-right:15px;
+    margin-top:3px;
+}
+
+.cross:before,.cross:after {
+    content: '';
+    border-top: 2px solid black;
+    width: 15px;
+    display: block;
+    margin-top: 18px;
+    transition: 0.3s;
+}
+
+.cross:after {
+    transform: rotate(90deg);
+    margin-top: -2px;
+}
+
+.content_in_tabs {
+    box-sizing: border-box;
+    font-size: 0.9em;
+    margin: 10px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height, .5s;
+}
+
+input:checked ~ .content_in_tabs {
+    max-height: 800px;
+    transition: max-height, 2s;
+}
+
+input:checked ~ .label-title  .cross:before {
+    transform: rotate(180deg);
+}
+
+input:checked ~ .label-title  .cross:after {
+    transform: rotate(0deg);
+}
+
+/* Toggles*/
+input[name='rtoggle']{
+    display:none;
+}
+
+#menu{
+    border-collapse:collapse;
+    text-align:center;
+}
+
+#menu th{
+    width:25%;
+}
+
+.btn{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+.btnimg{
+    padding-top:1rem;
+    padding-bottom: 0rem;
+    width:60px;
+    opacity:0.7;
+}
+
+.btnimg:hover{
+    opacity:1;
+}
+
+.icons{
+    font-weight:bold;
+    font-size:1.5rem;
+    padding-bottom:1rem;
+}
+
+/*Slider*/
+.slidercontainer {
+    width: 100%; /* Width of the outside container */
+  }
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: whitesmoke; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: black; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: black; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+/* Map */
+#map { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left:20%;
+    width: 100%; 
+    flex-grow:1;
+    flex-shrink:1;
+}
+
+li{
+    padding:3px 0;
+}
+
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:16px;
+}
+ul span{
+    width:10px;
+    height:10px;
+    display:inline-block;
+    margin-right:8px;
+    border-radius:50%;
+}
+dd{
+    margin-left:0;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+.mapboxgl-popup-content{
+    font-size:14px;
+    color:rgba(0,0,0,0.5);
+    min-width:250px;
+    max-width:400px;
+    box-shadow:0 0 4px 0 rgba(0,0,0,0.1);
+}
+dl{
+    margin-bottom:0;
+}
+
+/* Legend */
+.radio_1, .radio_2,.radio_3,.radio_4,.radio_5,.radio_6,.radio_7,.radio_8 {
+    background:white;
+    color:rgba(0,0,0,0.5);
+    width:400px;
+    position:absolute;
+    right:16px;
+    top:16px;
+    box-shadow:0 0 4px 0 rgba(0,0,0,0.1);
+    color:rgba(0,0,0,0.5);
+    }
+
+    /*Comparison Map*/
+    .com { 
+        position: absolute; 
+        top: 0; 
+        bottom: 0; 
+        left:20%;
+        width: 80%; 
+   
+    }
+    
+
+        
+
+        
