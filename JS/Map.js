@@ -5,7 +5,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiamxhYTEzNjI0IiwiYSI6ImNrbzdnZzAzYTA2dDEyd2xrN
 const map = new mapboxgl.Map({
   container: 'map', // container element ID
   style: 'mapbox://styles/jlaa13624/ckuu5ac9k3q4j17l8z5gxhoah', // style URL
-  center: [-73.9652, 40.7008], // starting position [lng, lat]
+  center: [-74.00, 40.715], // starting position [lng, lat]
   zoom: 14, // starting zoom
   minZoom:10.5, // Zoom out
   maxZoom:18 //Zoom in
@@ -152,7 +152,7 @@ sliderRange.onchange = function() {
     const housing_map = new mapboxgl.Map({
       container: 'housing_before',
       style: 'mapbox://styles/jlaa13624/ckvvn0nl12ewe14obm6seupo4',
-      center: [-73.99, 40.69], // starting position [lng, lat]
+      center: [-74.00, 40.715], // starting position [lng, lat]
       zoom: 14, // starting zoom
       minZoom:10.5, // Zoom out
       maxZoom:18 //Zoom in
@@ -161,7 +161,7 @@ sliderRange.onchange = function() {
      const pop_map = new mapboxgl.Map({
         container: 'pop_before',
         style: 'mapbox://styles/jlaa13624/ckvw250cs00u815pfozb1fc8c',
-        center: [-73.99, 40.69], // starting position [lng, lat]
+        center: [-74.00, 40.715], // starting position [lng, lat]
         zoom: 14, // starting zoom
         minZoom:10.5, // Zoom out
         maxZoom:18 //Zoom in
@@ -317,7 +317,7 @@ for (const input of inputs) {
           const map = new mapboxgl.Map({
             container: 'pop_before',
             style: 'mapbox://styles/jlaa13624/ckvw250cs00u815pfozb1fc8c',
-            center: [-74.00, 40.72], // starting position [lng, lat]
+            center: [-74.00, 40.715], // starting position [lng, lat]
             zoom: 14, // starting zoom
             minZoom:10.5, // Zoom out
             maxZoom:18 //Zoom in
@@ -325,7 +325,7 @@ for (const input of inputs) {
           const afterMap = new mapboxgl.Map({
             container: 'pop_after',
             style: 'mapbox://styles/jlaa13624/ckwz8z2lq0ofb14o0va68ube8',
-            center: [-74.00, 40.72], // starting position [lng, lat]
+            center: [-74.00, 40.715], // starting position [lng, lat]
             zoom: 14, // starting zoom
             minZoom:10.5, // Zoom out
             maxZoom:18 //Zoom in
@@ -428,7 +428,7 @@ for (const input of inputs) {
           const map = new mapboxgl.Map({
             container: 'housing_before',
             style: 'mapbox://styles/jlaa13624/ckvvn0nl12ewe14obm6seupo4',
-            center: [-73.99, 40.69], // starting position [lng, lat]
+            center: [-74.00, 40.715], // starting position [lng, lat]
             zoom: 14, // starting zoom
             minZoom:10.5, // Zoom out
             maxZoom:18 //Zoom in
@@ -436,7 +436,7 @@ for (const input of inputs) {
           const afterMap = new mapboxgl.Map({
             container: 'housing_after',
             style: 'mapbox://styles/jlaa13624/ckwwzaoes0e1i14tjc3olwycg',
-            center: [-73.99, 40.69], // starting position [lng, lat]
+            center: [-74.00, 40.715], // starting position [lng, lat]
             zoom: 14, // starting zoom
             minZoom:10.5, // Zoom out
             maxZoom:18 //Zoom in
@@ -551,7 +551,7 @@ ml.onclick = function(){
     const beforeMap = new mapboxgl.Map({
       container: 'before',
       style: 'mapbox://styles/jlaa13624/ckw0pchya1q9114nuran1z2m6',
-      center: [-74.00, 40.72], // starting position [lng, lat]
+      center: [-74.00, 40.715], // starting position [lng, lat]
       zoom: 14, // starting zoom
       minZoom:10.5, // Zoom out
       maxZoom:18 //Zoom in
@@ -559,7 +559,7 @@ ml.onclick = function(){
     const afterMap = new mapboxgl.Map({
       container: 'after',
       style: 'mapbox://styles/jlaa13624/ckwvmktdj5s1315qjp1rqow5h',
-      center: [-74.00, 40.72], // starting position [lng, lat]
+      center: [-74.00, 40.715], // starting position [lng, lat]
       zoom: 14, // starting zoom
       minZoom:10.5, // Zoom out
       maxZoom:18 //Zoom in
@@ -942,6 +942,7 @@ map.on('click',function(event){// click arguement+listener funciton
 //        }
 
 // });
+
 
 
 
