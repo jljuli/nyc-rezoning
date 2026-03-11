@@ -19,19 +19,30 @@ h4{
     text-transform:uppercase;
     border-bottom: 1px solid rgba(0,0,0,0.05);
     margin:0;
-    padding:16px;
+    padding:11px;
+    font-size:1.1rem;
 }
 
 h5{
     text-transform:uppercase;
     border-bottom: 1px solid rgba(0,0,0,0.05);
     margin:0;
-    padding-left:16px;
+    padding-left:11px;
+    font-size:1rem;
 }
 
 ::selection{
     background-color:black;
     color:whitesmoke;
+}
+
+/* Sidebar font overrides */
+.sidenav h1 {
+    font-size: 1.5rem;
+}
+
+.sidenav h2 {
+    font-size: 1.35rem;
 }
 
 /* Sidebar */
@@ -51,11 +62,12 @@ h5{
 }
 
 #intro{
-    padding-bottom:2rem;
+    padding-bottom:1.3rem;
+    font-size:1.1rem;
 }
 
 .wrapper{
-    padding:4rem;
+    padding:2.7rem;
 }
 
 
@@ -66,31 +78,31 @@ input[name='tabs']{
 .label-title /* frame */ {
     display: flex;
     width: 95%;
-    height: 5rem;
+    height: 3.4rem;
     cursor: pointer;
-    border: 3px solid black;/* #3E474F */
+    border: 2px solid black;/* #3E474F */
     user-select: none;
 }
 
 .label-title div:first-child /* Text */{
     width: 100%;
-    line-height: 45px;
-    margin-left: 10px;
-    font-size: 2rem;
+    line-height: 30px;
+    margin-left: 7px;
+    font-size: 1.35rem;
     font-weight:bold;
 }
 
 .cross{
-    margin-right:15px;
-    margin-top:3px;
+    margin-right:10px;
+    margin-top:2px;
 }
 
 .cross:before,.cross:after {
     content: '';
     border-top: 2px solid black;
-    width: 15px;
+    width: 10px;
     display: block;
-    margin-top: 18px;
+    margin-top: 12px;
     transition: 0.3s;
 }
 
@@ -101,15 +113,15 @@ input[name='tabs']{
 
 .content_in_tabs {
     box-sizing: border-box;
-    font-size: 1.6rem;
-    margin: 10px 10px;
+    font-size: 1.1rem;
+    margin: 7px 7px;
     max-height: 0;
     overflow: hidden;
     transition: max-height, 1s;
 }
 
 input:checked ~ .content_in_tabs {
-    max-height: 800px;
+    max-height: 540px;
     transition: max-height, 2s;
 }
 
@@ -143,9 +155,9 @@ input[name='rtoggle']{
 
 
 .btnimg{
-    padding-top:1rem;
+    padding-top:0.7rem;
     padding-bottom: 0rem;
-    width:60px;
+    width:40px;
     opacity:0.7;
 }
 
@@ -155,8 +167,8 @@ input[name='rtoggle']{
 
 .icons{
     font-weight:bold;
-    font-size:1.5rem;
-    padding-bottom:1rem;
+    font-size:1rem;
+    padding-bottom:0.7rem;
 }
 
 /*Slider*/
@@ -232,32 +244,32 @@ input[name='rtoggle']{
 }
 
 li{
-    padding:3px 0;
+    padding:2px 0;
 }
 
 
 ul{
     list-style-type:none;
     margin:0;
-    padding:16px;
+    padding:11px;
 }
 ul span{
-    width:10px;
-    height:10px;
+    width:7px;
+    height:7px;
     display:inline-block;
-    margin-right:8px;
+    margin-right:5px;
     border-radius:50%;
 }
 dd{
     margin-left:0;
-    margin-bottom:8px;
+    margin-bottom:5px;
     font-weight:bold;
 }
 .mapboxgl-popup-content{
-    font-size:14px;
+    font-size:10px;
     color:rgba(0,0,0,0.5);
-    min-width:250px;
-    max-width:400px;
+    min-width:168px;
+    max-width:268px;
     box-shadow:0 0 4px 0 rgba(0,0,0,0.1);
 }
 dl{
@@ -293,35 +305,38 @@ dl{
 .radio_1, .radio_2,.radio_3,.radio_4,.radio_5,.radio_6,.radio_7,.radio_8 {
     background:white;
     color:rgba(0,0,0,0.5);
-    width:400px;
+    width:268px;
     position:absolute;
-    right:16px;
-    top:16px;
+    right:11px;
+    top:11px;
     box-shadow:0 0 4px 0 rgba(0,0,0,0.1);
     color:rgba(0,0,0,0.5);
+    font-size:1.1rem;
     }
 
 .legend_com{
     background:white;
     color:rgba(0,0,0,0.5);
-    width:400px;
+    width:268px;
     position:absolute;
-    right:16px;
-    top:16px;
+    right:11px;
+    top:11px;
     box-shadow:0 0 4px 0 rgba(0,0,0,0.1);
     color:rgba(0,0,0,0.5);
+    font-size:1.1rem;
     display:none;
     }
 
 .legend_com_pop{
         background:white;
         color:rgba(0,0,0,0.5);
-        width:400px;
+        width:268px;
         position:absolute;
-        right:16px;
-        top:16px;
+        right:11px;
+        top:11px;
         box-shadow:0 0 4px 0 rgba(0,0,0,0.1);
         color:rgba(0,0,0,0.5);
+        font-size:1.1rem;
         display:none;
         }
     
@@ -329,45 +344,46 @@ dl{
 .legend_ml{
     background:white;
     color:rgba(0,0,0,0.5);
-    width:400px;
+    width:268px;
     position:absolute;
-    right:16px;
-    top:16px;
+    right:11px;
+    top:11px;
     box-shadow:0 0 4px 0 rgba(0,0,0,0.1);
     color:rgba(0,0,0,0.5);
+    font-size:1.1rem;
     display:none;
     }
 
 .gradient_container{
     display:grid;
-    grid-template:repeat(5, 50px)/repeat(2, 50px);
+    grid-template:repeat(5, 34px)/repeat(2, 34px);
     background-color:white;
     justify-items:center;
     align-items:center;
     align-content:center;
-    height:300px;
-    margin-left:20px;
+    height:200px;
+    margin-left:13px;
 }
 
 .box-one{
     grid-row:1/-1;
     background-image: linear-gradient(#184e77, #f3ff82);
-    width:50px;
-    height:250px;
+    width:34px;
+    height:168px;
 }
 
 .box-two{
     grid-row:1/-1;
     background-image: linear-gradient(#c03018, #f0f0c0);
-    width:50px;
-    height:250px;
+    width:34px;
+    height:168px;
 }
- 
 
         
 
 
         
+
 
 
 
