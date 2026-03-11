@@ -277,6 +277,7 @@ var input_variable = document.getElementById('');
 for (const input of inputs) {
 
   input.onclick = (layer) => {
+    document.querySelectorAll('.mapboxgl-popup').forEach(p => p.remove());
     const layerId = layer.target.id;
     map.setStyle('mapbox://styles/jlaa13624/' + layerId); //8 inputs
     document.getElementById("sliderRange").value='2010';// Slider bar
@@ -535,7 +536,7 @@ for (const input of inputs) {
 var ml = document.getElementById("tab-2");
 
 ml.onclick = function(){
-  
+  document.querySelectorAll('.mapboxgl-popup').forEach(p => p.remove());
    // Switch between maps and ml
   document.getElementById("map").style.display = "none";
   document.getElementsByClassName('legend')[0].style.display = 'none';
@@ -942,6 +943,7 @@ map.on('click',function(event){// click arguement+listener funciton
 //        }
 
 // });
+
 
 
 
