@@ -14,7 +14,7 @@ const map = new mapboxgl.Map({
 var checking_housing=0
 var checking_pop=0
 var checking_ml=0
-var map_on_screen=""
+var map_on_screen = "landuse"
 
 var landUseNames = {
   '1': 'One & Two Family Buildings',
@@ -942,5 +942,6 @@ map.on('click',function(event){// click arguement+listener funciton
 //        }
 
 // });
+
 
 
