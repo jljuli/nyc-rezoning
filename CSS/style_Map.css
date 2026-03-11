@@ -203,10 +203,14 @@ input[name='rtoggle']{
     position: absolute; 
     top: 0; 
     bottom: 0; 
-    width: 80%; 
+    /*width: 80%;*/ 
     left:20%;
     /* flex-grow:1;
     flex-shrink:1; */
+
+    /*地图zoom修改*/
+    width: 114.28%;  /* 80% / 0.7 ≈ 114.28% */
+    height: 142.85%; /* 100% / 0.7 ≈ 142.85% */
 }
 
 
@@ -215,9 +219,13 @@ input[name='rtoggle']{
     top: 0; 
     bottom: 0; 
     left:20%;
-    width: 80%; 
+    /*width: 80%;*/ 
     flex-grow:1;
     flex-shrink:1;
+    
+    /*地图zoom修改*/
+    width: 114.28%;  /* 80% / 0.7 ≈ 114.28% */
+    height: 142.85%; /* 100% / 0.7 ≈ 142.85% */
 }
 
 #pop_diff{
@@ -361,6 +369,7 @@ dl{
 
 
         
+
 
 
 
