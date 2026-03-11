@@ -1,4 +1,3 @@
-// Try this for zoom
 // document.body.style.zoom = "50%";
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiamxhYTEzNjI0IiwiYSI6ImNrbzdnZzAzYTA2dDEyd2xrNGVoa242aHkifQ.fMOf-c4Vcc5JmV3Owr1Kzw';
@@ -11,6 +10,10 @@ const map = new mapboxgl.Map({
   minZoom:10.5, // Zoom out
   maxZoom:18 //Zoom in
 });  
+
+map.on('load', function() {
+  map.resize();
+});
 
 var checking_housing=0
 var checking_pop=0
@@ -941,4 +944,5 @@ map.on('click',function(event){// click arguement+listener funciton
 //           '</dl>')
 //           .addTo(map);
 //        }
+
 // });
