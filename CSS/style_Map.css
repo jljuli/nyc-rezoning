@@ -145,6 +145,7 @@ input[name='rtoggle']{
 
 #menu th{
     width:25%;
+    vertical-align: top;
 }
 
 .btn{
@@ -385,6 +386,7 @@ dl{
 
 
         
+
 
 
 
