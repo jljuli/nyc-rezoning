@@ -12,7 +12,9 @@ const map = new mapboxgl.Map({
 });  
 
 map.on('load', function() {
-  map.resize();
+  setTimeout(function() {
+    map.resize();
+  }, 500);
 });
 
 var checking_housing=0
@@ -946,3 +948,4 @@ map.on('click',function(event){// click arguement+listener funciton
 //        }
 
 // });
+
