@@ -11,12 +11,6 @@ const map = new mapboxgl.Map({
   maxZoom:18 //Zoom in
 });  
 
-map.on('load', function() {
-  setTimeout(function() {
-    map.resize();
-  }, 500);
-});
-
 var checking_housing=0
 var checking_pop=0
 var checking_ml=0
@@ -948,4 +942,5 @@ map.on('click',function(event){// click arguement+listener funciton
 //        }
 
 // });
+
 
