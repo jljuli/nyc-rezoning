@@ -223,6 +223,14 @@ input[name='rtoggle']{
     display:none;
 }
 
+#housing_diff{
+    display:none;
+}
+
+#comparison-container{
+    display:none;
+}
+
 li{
     padding:3px 0;
 }
@@ -360,6 +368,7 @@ dl{
 
 
         
+
 
 
 
