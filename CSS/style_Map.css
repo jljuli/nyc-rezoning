@@ -170,6 +170,7 @@ input[name='rtoggle']{
     font-weight:bold;
     font-size:1rem;
     padding-bottom:0.7rem;
+    line-height:1.5;
 }
 
 /*Slider*/
@@ -386,6 +387,7 @@ dl{
 
 
         
+
 
 
 
